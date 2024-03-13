@@ -7,7 +7,7 @@ namespace BetterDecorator
         /// <summary>
         /// Metodo que recebe uma string com caracter repetido
         /// </summary>
-        /// <param name="s">String que vai ser posta </param>
+        /// <param name="s">String que vai ser decorada </param>
         /// <param name="x">Caracter que vai ser adicionado</param>
         /// <param name="c">Caracter loop</param>
         /// <returns></returns>
@@ -16,6 +16,15 @@ namespace BetterDecorator
             string deco = new string(x, c);
             return $"{deco} {s} {deco}";
         }
+        /// <summary>
+        /// Metodo que decora a string
+        /// </summary>
+        /// <returns>Retorna a string</returns>
+        private static string Decor()
+        {
+            return Decor("User did not specify args !", '=', 3);
+        }
+
         /// <summary>
         /// Inicio do programa
         /// </summary>
